@@ -15,4 +15,8 @@ public class Student {
     private String firstName;
     @Column(name = "second_name", nullable = false)
     private String lastName;
+    @Column(name = "age" ,nullable = false)
+    private int age;
+    @Column(name = "grade", nullable = false)
+    private int grade;
 }
