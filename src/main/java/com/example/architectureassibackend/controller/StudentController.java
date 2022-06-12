@@ -20,7 +20,7 @@ public class StudentController {
         this.studentService=studentService;
     }
     @PostMapping
-    public ResponseEntity<Student> saveEmployee(@RequestBody Student student){
+    public ResponseEntity<Student> saveStudent(@RequestBody Student student){
         System.out.println("f"+student.getFirstName()+"l"+student.getLastName());
         return new ResponseEntity<Student>(studentService.saveStudent(student), HttpStatus.CREATED);
     }
